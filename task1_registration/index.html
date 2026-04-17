@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Student Registration</h2>
+
+    <form action="insert.php" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+
+        <input type="email" name="email" placeholder="Email" required>
+
+        <input type="date" name="dob" required>
+
+        <select name="department" required>
+            <option value="">Select Department</option>
+            <option>CSE</option>
+            <option>IT</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+        </select>
+
+        <input type="text" name="phone" placeholder="Phone Number" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <br>
+    <a href="display.php">View Students</a>
+</div>
+
+</body>
+</html>
