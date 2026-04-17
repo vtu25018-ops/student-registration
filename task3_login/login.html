@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+
+    <!-- Link JavaScript -->
+    <script src="login.js" defer></script>
+</head>
+<body>
+
+<h2>Login Page</h2>
+
+<form action="login.php" method="POST" onsubmit="return validateForm()">
+
+    <!-- Username -->
+    <input type="text" id="username" name="username" placeholder="Enter Username">
+    <span id="userError" style="color:red;"></span>
+    <br><br>
+
+    <!-- Password -->
+    <input type="password" id="password" name="password" placeholder="Enter Password">
+    <span id="passError" style="color:red;"></span>
+    <br><br>
+
+    <!-- Submit -->
+    <button type="submit">Login</button>
+
+</form>
+
+</body>
+</html>
